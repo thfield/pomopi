@@ -1,7 +1,11 @@
-const moment = require(moment)
+const Pomo = require('./pomo.js')
 
-class Pomo {
-  constructor(workTime=25, breakTime=5, longBreakTime=15, setLength=4) {
-    this.workTime = workTime
-  }
-}
+let pomo = new Pomo(0.04, 0.02, 0.03, 2)
+let res = pomo.minToMilliSec(0.0167)
+
+console.log(pomo.workTime)
+console.log(pomo.breakTime)
+console.log(pomo.longBreakTime)
+console.log(pomo.setLength)
+
+// console.log(Pomo)
