@@ -8,10 +8,12 @@
     "purecss": "^1.0.0"
   },
   "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.9.0",
     "browserify": "^16.2.3"
   },
   "scripts": {
-    "build": "cp node_modules/purecss/build/pure.css styles/pure.css;browserify dev/main.js -o js/bundle.js",
+    "install_fa": "cp node_modules/@fortawesome/fontawesome-free/css/all.css styles/fa.css; cp -r node_modules/@fortawesome/fontawesome-free/webfonts styles/webfonts",
+    "build": "npm run install_fa;cp node_modules/purecss/build/pure.css styles/pure.css;browserify dev/main.js -o js/bundle.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

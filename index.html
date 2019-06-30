@@ -6,12 +6,24 @@
   <title>pomo-pi</title>
   <link rel="stylesheet" href="styles/pure.css">
   <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/fa.css">
 </head>
 
 <body>
     <div class="pure-g">
-        <div class="pure-u-1-2"><p>left</p></div>
-        <div class="pure-u-1-2"><p>right</p></div>
+        <div class="pure-u-1-2">
+          <div class="timeremaining">
+            <i class="fas fa-stopwatch"></i><span id="pomo-min">00</span>:<span id="pomo-sec">00</span>
+            </div>
+          <div class="pure-button-group" role="group" aria-label="controls">
+            <button class="pure-button"><i class="far fa-play-circle"></i>Start</button>
+            <button class="pure-button"><i class="far fa-pause-circle"></i>Pause</button>
+            <button class="pure-button"><i class="fas fa-redo-alt"></i>Reset</button>
+          </div>
+        </div>
+        <div class="pure-u-1-2">
+          <p>right</p>
+          </div>
     </div>
 
     <script src="javascripts/index.js"></script>
