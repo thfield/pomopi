@@ -4,28 +4,31 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>pomo-pi</title>
-  <link rel="stylesheet" href="styles/pure.css">
+  <link rel="stylesheet" href="vendor/css/bootstrap.min.css">
+  <link rel="stylesheet" href="vendor/css/fa.min.css">
   <link rel="stylesheet" href="styles/main.css">
-  <link rel="stylesheet" href="styles/fa.css">
+
 </head>
 
 <body>
-    <div class="pure-g">
-        <div class="pure-u-1-2">
+    <div class="container">
+        <div class="row">
           <div class="timeremaining">
             <i class="fas fa-stopwatch"></i><span id="pomo-min">00</span>:<span id="pomo-sec">00</span>
             </div>
-          <div class="pure-button-group" role="group" aria-label="controls">
-            <button class="pure-button"><i class="far fa-play-circle"></i>Start</button>
-            <button class="pure-button"><i class="far fa-pause-circle"></i>Pause</button>
-            <button class="pure-button"><i class="fas fa-redo-alt"></i>Reset</button>
+        </div>
+        <div class="row">
+          <div class="btn-group" role="group" aria-label="controls">
+            <span class="btn btn-primary"><i class="far fa-play-circle"></i> Start</span>
+            <span class="btn btn-primary"><i class="far fa-pause-circle"></i> Pause</span>
+            <span class="btn btn-primary"><i class="fas fa-redo-alt"></i> Reset</span>
           </div>
         </div>
-        <div class="pure-u-1-2">
-          <p>right</p>
-          </div>
     </div>
 
-    <script src="javascripts/index.js"></script>
+    <script src="vendor/js/jquery.slim.min.js"></script>
+    <script src="vendor/js/popper.min.js"></script>
+    <script src="vendor/js/bootstrap.min.js"></script>
+    <script src="js/bundle.js"></script>
 </body>
 </html>
